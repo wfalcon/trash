@@ -34,3 +34,16 @@ title_gen = [word.title() for word in data]
 print(title_gen)
 
 print('*'*60)
+
+vowels = {'a', 'e', 'i', 'o', 'u'}
+message = "Don't forget to pack your towel."
+found = set()
+for v in vowels:
+	if v in message:
+		found.add(v)
+print(found)
+
+found2 = { v for v in vowels if v in message }
+print(found2)
+
+print('*'*20)
